@@ -96,7 +96,7 @@ With "estimation" it is possible to test if some observed data are actually dist
   - p -> initial probability of success p = A/(A+B)
   - q -> initial probability of failure q = B/(A+B)
   - N -> number of outcomes (successes and faliures) available
-- Support: $$x \in \{max(0,n+A-N),...,min(A,n) \}$
+- Support: $x \in \{max(0,n+A-N),...,min(A,n) \}$
 - PMF: $f(x;A,B,n) = \frac{{A \choose x} {B \choose n-x}}{  {A+B \choose n} }$
 - E[X]: nA/(A+B)
 - Var[X]: $n\frac{A}{A+B}\frac{B}{A+B}\frac{A+B-n}{A+B-1}$
