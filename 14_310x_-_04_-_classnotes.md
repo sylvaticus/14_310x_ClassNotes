@@ -16,42 +16,30 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### 040101 - Functions of Random Variables, Part I ###
 
-Knowledge stages:
-Random variables -> Functions of Random variables -> Statistics
-
-Statisctics (like sampel mean or t-test) are function of random variables
-
-We are interested in how a new variable (itself a r.v.), function of an other r.v. - or possibly of a vector of r.v. - for which we know the PDF is in turn distributed.
-
-Graphical modification:
-
-- Multiplying a r.v. by a positive contant -> it "stetch up" its distribution: the density ditributes itself over a wider (double) range and ssquish down (as the area must be the same, it has to integrate to 1!), but keeps the same shape.
-- Taking the absoule value -> it flips the negative values of the support of the r.v. to the positive side (adding up - folding over - to the density already present there)
-- Adding a constant -> shift the density right (positive contant) or left (negative one) of its original support
-
-In all cases the PDF has to keep integrating to 1
+- Knowledge stages:
+  - Random variables -> Functions of Random variables -> Statistics
+- Statisctics (like sample mean or t-test) are function of random variables
+- We are interested in how a new variable (itself a r.v.), function of an other r.v. - or possibly of a vector of r.v. - for which we know the PDF is in turn distributed.
+- Graphical modification:
+  - Multiplying a r.v. by a positive contant -> it "stetch up" its distribution: the density ditributes itself over a wider (double) range and ssquish down (as the area must be the same, it has to integrate to 1!), but keeps the same shape.
+  - Taking the absoule value -> it flips the negative values of the support of the r.v. to the positive side (adding up - folding over - to the density already present there)
+  - Adding a constant -> shift the density right (positive contant) or left (negative one) of its original support
+  - In all cases the PDF has to keep integrating to 1
 
 #### Transformation of a uniform to a binomial ####
 
 Question: Which function g can trasform a Uniform in [0,1] to a Binomial(n=2, p=0.5) ?
 
-We are now dealing with the trasformation from a continuous r.v. to a discrete one.
-
-For the binomial $B(2,0.5)$, $P_Y(0) = 0.25$, $P_Y(1) = 0.5$ and $P_Y(2) = 0.25$
-
-A function that map the interval of X from 0 to 0.25 to 0, 0.25-0.75 to 1 and 0.75-1 to 2 would be a suitable one (but it's not the only one, one could go in the other way across the support for example)
-
-Any function that "chop" the support of the X (the unit interval) and map appropriate sized sub-intervals to each point mass of the binomial would be appropriate.
-
-Sometimes there will be multiple functions of a random variable that will map into the distribution of a new random variable.
-
-Which specific method to apply to retrieve the distribution of a function of a r.v. X depends on:
-
-- X is continuous or discrete
-- X is a scalar (a sinlge r.v.) or a vector (multiple r.v.)
-- the function Y = h(X) is invertible or not
-
-On this course we focus one single method + examples instead of general treatment.
+- We are now dealing with the trasformation from a continuous r.v. to a discrete one.
+- For the binomial $B(2,0.5)$, $P_Y(0) = 0.25$, $P_Y(1) = 0.5$ and $P_Y(2) = 0.25$
+- A function that map the interval of X from 0 to 0.25 to 0, 0.25-0.75 to 1 and 0.75-1 to 2 would be a suitable one (but it's not the only one, one could go in the other way across the support for example)
+- Any function that "chop" the support of the X (the unit interval) and map appropriate sized sub-intervals to each point mass of the binomial would be appropriate.
+- Sometimes there will be multiple functions of a random variable that will map into the distribution of a new random variable.
+- Which specific method to apply to retrieve the distribution of a function of a r.v. X depends on:
+  - X is continuous or discrete
+  - X is a scalar (a sinlge r.v.) or a vector (multiple r.v.)
+  - the function Y = h(X) is invertible or not
+- On this course we focus one single method + examples instead of general treatment.
 
 ### 040102 - Functions of Random Variables, Part II ###
 

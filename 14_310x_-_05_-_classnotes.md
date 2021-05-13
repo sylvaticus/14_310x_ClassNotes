@@ -349,7 +349,18 @@ Still it is possible to find any values with these rules:
         
 68.2% of the area under the CDF of the standard normal is between 1 and -1 standard deviations, 95% between -2 and +2 standard deviations and 99.7% between -3 and 3
 
-### 50110 - Finding the Area Under the Curve Using R ###
+#### Standardisation of a non-standard normal ###
+
+If $X~N(\mu,\sigma^2)$ we can find $P(X \leq x)$ using the standard normal in a two-step process:
+
+- We "standardise" X, i.e. subtract $\mu$ and divide by $\sigma$ to obtain a standard random variable $Z$;
+- We evaluate the CDF of the standard normal at $(x-\mu)/\sigma$.
+
+$P(X \leq x) = P(\frac{X-\mu}{\sigma} \leq \frac{x-\mu}{\sigma}) = P(Z \leq \frac{x-\mu}{\sigma}) = \Phi(\frac{x-\mu}{\sigma})$
+
+$P(X \geq x) = P(\frac{X-\mu}{\sigma} \geq \frac{x-\mu}{\sigma}) = P(Z \geq \frac{x-\mu}{\sigma}) = 1 - \Phi(\frac{x-\mu}{\sigma}) = - \Phi(\frac{\mu-x}{\sigma})$ (where the last passage is due of the symmetry of the standard normal with respect to the origin)
+
+### 050110 - Finding the Area Under the Curve Using R ###
 
 Useful R command about the normal distribution:
 
