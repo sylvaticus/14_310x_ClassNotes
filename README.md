@@ -10,3 +10,5 @@ Please help me correcting the notes using pull requests.
 - [Module 04 - Functions and Moments of a Random Variables & Intro to Regressions](14_310x_-_04_-_classnotes.md)
 - [Module 05 - Module 5: Special Distributions, the Sample Mean, the Central Limit Theorem](14_310x_-_05_-_classnotes.md)
 - Module 06 - Assessing and Deriving Estimators - Confidence Intervals, and Hypothesis Testing
+
+The other units are now also available, just browse the source
