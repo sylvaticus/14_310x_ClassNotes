@@ -12,3 +12,6 @@ Please help me correcting the notes using pull requests.
 - Module 06 - Assessing and Deriving Estimators - Confidence Intervals, and Hypothesis Testing
 
 The other units are now also available, just browse the source
+
+
+For compact cheatsheets see the MicroMaster repository: https://github.com/sylvaticus/MITx-MicroMaster-Statistics-and-Data-Science
